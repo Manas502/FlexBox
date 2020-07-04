@@ -1,0 +1,47 @@
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body{
+	background: #524745;
+	margin: 0;
+}
+nav{
+	display: flex;
+	flex-direction: row;
+	//border: 2px solid #4c9be6;
+	justify-content: flex-end;
+}
+a{
+	font-size: 40px;
+	text-decoration: none;
+	color: #f7e048;
+	font-family: raleway;
+	border-bottom: 1px solid #ffffff;
+	margin: 20px;
+	transition: color 0.3s ease-out;
+}
+a:hover{
+	color: #d12e5f;
+	border-bottom-color: #d12e5f
+}
+i{
+	margin-right: 10px;
+}
+@media screen and (max-width: 900px){
+	nav{
+		justify-content: space-around;
+	}
+	a{
+		font-size: 25px;
+	}
+}
+@media screen and (max-width: 500px){
+	nav{
+		flex-direction: column;
+		align-items: center;
+		background: #34495e ;
+	}
+	a{
+		color: white;
+	}
+}
